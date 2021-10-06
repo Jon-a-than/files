@@ -1,0 +1,268 @@
+body{
+    background:url("../picture/青空.jpg")  no-repeat ;
+}
+
+img{
+    display:block;
+    float:left;
+    width:90px;
+    height:90px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+
+#father{
+    width:1500px;
+    height:600px;
+}
+
+div>p,div>pre{
+    display:inline;
+    font-size: 27PX;
+    color:rgb(255, 255, 255);
+}
+
+div>span{
+    font-size: 20PX;
+    color:rgb(255, 255, 255);
+}
+
+#kuang{
+    border-top-left-radius:15px;
+    margin-left:30px;
+    margin-bottom: 15px;
+    float:left;
+    width:500px;
+    height:310px;
+    background-color:rgba(73, 73, 73, 0.3);
+}
+
+.juzhong{
+    text-align:center;
+    color:rgb(255, 255, 255);
+}
+
+#yubao{
+    border-top-right-radius:15px;
+    margin-bottom:15px;
+    background-color:rgba(73, 73, 73, 0.3);
+    float:right;
+    width:950px;
+    height:310px;
+}
+
+.hrstyle{
+width:90%;
+margin:0 auto;
+border: 0;
+height: 3px;
+background-image: linear-gradient(to right, rgba(0, 0, 0, 0), 
+rgb(232, 237, 243), rgba(0, 0, 0, 0));
+}
+
+
+div>hr{
+    width:90%;
+    margin:0 auto;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), 
+    rgb(255, 255, 255), rgba(0, 0, 0, 0));
+}
+
+#map{
+    padding:0px;
+    border-bottom-left-radius:10px;
+    margin:10px;
+    margin-top:0px;
+    width:480px;
+    height:255px;
+    margin-right:0px;
+}
+
+#full{
+    border-bottom-left-radius:15px;
+    margin-left:30px;
+    float:left;
+    width:500px;
+    height:300px;
+    background-color:rgba(73, 73, 73, 0.3);
+}
+
+#top{
+    border-radius:10px;
+    margin-left:30px;
+    margin-bottom:15px;
+    width:1470px;
+    height:100px;
+    background-color:rgba(73, 73, 73, 0.3);
+}
+
+.next{
+    position:relative;
+    background-image:url('../picture/右1.png');
+    border-style:solid;
+    border-width:0px;
+    border-bottom-width:5px;
+    border-color:rgb(114, 114, 112);
+    float:right;
+    width:60px;
+    height:100px;
+    background-color:rgba(73, 73, 73, 0);
+    font-size:90px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 6px;
+    border-top-right-radius:15px;
+}
+
+.previous{
+    position:relative;
+    background-image:url('../picture/左.png');
+    border-style:solid;
+    border-width:0px;
+    border-bottom-width:5px;
+    border-color:rgb(114, 114, 112);
+    float:left;
+    width:60px;
+    height:100px;
+    background-color:rgba(73, 73, 73, 0);
+    font-size:90px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 6px;
+    border-top-left-radius:0px;
+}
+
+.previous:hover{
+    background-color:rgba(23, 192, 150, 0.521);
+    border-color:rgb(0, 255, 55);
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.432),0 17px 50px 0 rgba(253, 253, 253, 0.418);
+    background-image:url('../picture/左1.png');
+}
+
+.next:hover{
+    background-color:rgba(255, 0, 0, 0.329);
+    border-color:rgb(255, 0, 0);
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.466),0 17px 50px 0 rgba(255, 255, 255, 0.459);
+    background-image:url('../picture/右2.png');
+}
+
+#zhexiantu{
+    border-bottom-right-radius:15px;
+    width:565px;
+    height:300px;
+    float:right;
+    background-color:rgba(73, 73, 73, 0.3);
+}
+
+canvas{
+    display: block;
+    border-radius:10px;
+    margin:20px;
+    width:525px;
+    height:260px;
+    background-color: rgba(255, 248, 220, 0.603);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#tips{
+    margin-right:20px;
+    width:365px;
+    height:300px;
+    float:right;
+    background-color:rgba(73, 73, 73, 0.3);
+}
+
+.img1:hover{
+    border-radius: 10px;
+    border-style:solid;
+    border-bottom-width:5px;
+    border-color:rgb(128, 255, 0);
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.466),0 17px 50px 0 rgba(255, 255, 255, 0.459);
+}
+
+.pic:hover{
+    box-shadow: 0 12px 16px 0 rgba(0, 102, 255, 0.466),0 17px 50px 0 rgba(0, 60, 255, 0.459);
+}
+
+#zimu{
+    float:left;
+    border-width:1px;
+    position:relative;
+    top:-270px;
+    left:210px;
+    font-size:20px;
+    font-weight: bold;
+}
+
+#one1{
+    position: relative;
+    top: -135px;
+    left: 50px;
+    font-size:20px;
+    max-width: 60px;
+}
+
+#two{
+    position: relative;
+    top: -203px;
+    left: 50px;
+    font-size:20px;
+    max-width: 60px;
+}
+
+#three{
+    position: relative;
+    top: -272px;
+    left: 50px;
+    font-size:20px;
+    max-width: 60px;
+}
+
+#four{
+    position: relative;
+    top: -345px;
+    left: 50px;
+    font-size:20px;
+    max-width: 60px;
+}
+
+#day1{
+    position: relative;
+    top: -200px;
+    left: 100px;
+    font-size:20px;
+    max-width: 60px;
+}
+
+#day2{
+    position: relative;
+    top: -226px;
+    left: 205px;
+    font-size:20px;
+    max-width: 60px;
+}
+
+#day3{
+    position: relative;
+    top: -254px;
+    left: 315px;
+    font-size:20px;
+    max-width: 60px;
+}
+
+#day4{
+    position: relative;
+    top: -280px;
+    left: 420px;
+    font-size:20px;
+    max-width: 60px;
+}
+

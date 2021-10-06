@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>天气预报查询</title>
+    <link rel=stylesheet type="text/css" href="../css/style.css" />
+</head>
+
+<body  id="bg">
+<div id="father">
+
+<div id="top" >
+<img id="mode" class="img1" src="../picture/日间.PNG" title="点击切换为夜间模式" onclick="ptu()"/>
+<h1 class="juzhong" style="font-size: 60px;">天气</h1>
+</div>
+
+<div id="kuang">
+<h1 class="juzhong" id="cityname">城市名称</h1>
+<hr class="hrstyle"/><pre>         </pre>
+<p id="one">气温 :</p><pre>        </pre>
+<p id="temp">请稍后</p>
+<p>°C</p><hr/><pre>         </pre>
+<p>天气 :</p><pre>        </pre>
+<p id="weather">请稍后</p>
+<hr/><pre>         </pre>
+<p>风力 :</p><pre>        </pre>
+<p id="power">请稍后</p><p>级</p><hr/><pre>         </pre>
+<p>风向 :</p><pre>        </pre>
+<p id="dir">请稍后</p><p>风</p><hr/><pre>         </pre>
+<p>空气湿度 :</p><pre>    </pre>
+<p id="shidu">请稍后</p><p>%</p>
+<hr class="hrstyle"/>
+<pre>         </pre>
+<p style="font-size:10px">*数据发布时间:</p>
+<p style="font-size:10px" id="time">网络异常</p>
+</div>
+
+<div id="yubao">
+
+<button  id="previous" class="previous" title="点击查看前一天"  ></button>
+<button  id="next" class="next"     title="点击查看下一天" ></button>
+
+<h1 class="juzhong">未来天气预览</h1><hr class="hrstyle"/><pre>     </pre>
+<p name="biao">时间 :</p><pre>                      </pre>
+<span id="first1" name="biao">请稍后</span><pre>       </pre>
+<span id="first2">请稍后</span><hr/><pre>     </pre>
+<p>昼夜气温(昼/夜) :</p><pre>            </pre>
+<span id="temp1">请稍后</span><span>°C</span>
+<p>/</p><span id="temp2">请稍后</span>
+<span>°C</span><hr/><pre>     </pre>
+<p>昼夜气象(昼/夜) :</p><pre>            </pre>
+<span id="weather1">请稍后</span>
+<p>/</p><span id="weather2">请稍后</span><hr/><pre>     </pre>
+<p>昼夜风向(昼/夜) :</p><pre>            </pre><span id="wind1">请稍后</span>
+<p>/</p><span id="wind2">请稍后</span><hr/><pre>     </pre>
+<p>昼夜风力(昼/夜) :</p><pre>            </pre>
+<span id="power1">请稍后</span><span>级</span><p>/</p><span id="power2">请稍后</span><span>级</span>
+<hr class="hrstyle"/>
+
+
+</div>
+
+<div id="full">
+<pre>        </pre>
+<p>你 所 在 城 市 的 位 置 :</p>
+
+
+<div id="map">
+</div>
+</div>
+
+<div id="zhexiantu">
+<canvas id="pic" class="pic"  onmousemove="cnvs_getCoordinates(event)" onmouseout="cnvs_clearCoordinates()"></canvas>
+<div id="zimu">近日气温变化图</div>
+<div id="xycoordinates"></div>
+<div id="one1">加载中</div>
+<div id="two">加载中</div>
+<div id="three">加载中</div>
+<div id="four">加载中</div>
+<div id="day1"><b>1</b></div>
+<div id="day2"><b>2</b></div>
+<div id="day3"><b>3</b></div>
+<div id="day4"><b>4</b></div>
+</div>
+
+<div id="tips">
+<img src="../picture/晴.PNG" id="weath"/>
+<p id="asd" style="color:white;font-size:30px;">请稍后</p>
+<pre>   </pre><p style="margin-top: 0%;">生活小贴示</p><hr/>
+<pre>  </pre><p >疫情期间出行请佩戴口罩</p><hr/>
+<pre>  </pre><p id="we">c</p><hr/>
+<pre>  </pre><p id="yi">a</p>
+</div>
+
+</div>
+
+
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=8c134654b0a4faa7bff225db5a372427"></script>
+<script src="../javascript/script.js"></script>
+<script type="module" src="../javascript/pic.js"></script>
+
+
+
+
+</body>
+</html>
