@@ -206,11 +206,11 @@ AMap.plugin('AMap.Weather', function() {
                 ctx.lineWidth=3;
                 ctx.lineJoin="round";
                 ctx.moveTo(60+i*60,115-100*(data.forecasts[i].dayTemp-mi)/(step*4));
-                if(data.forecasts[i+1].dayTemp-data.forecasts[i].dayTemp<=0)
-                    ctx.quadraticCurveTo(60+i*60,115-100*(data.forecasts[i+1].dayTemp-mi)/(step*4),120+i*60,115-100*(data.forecasts[i+1].dayTemp-mi)/(step*4));
-                //ctx.lineTo(120+i*60,115-100*(data.forecasts[i+1].dayTemp-mi)/(step*4))
-                else
-                    ctx.quadraticCurveTo(120+i*60,115-100*(data.forecasts[i].dayTemp-mi)/(step*4),120+i*60,115-100*(data.forecasts[i+1].dayTemp-mi)/(step*4));
+                //if(data.forecasts[i+1].dayTemp-data.forecasts[i].dayTemp<=0)
+                    //ctx.quadraticCurveTo(60+i*60,115-100*(data.forecasts[i+1].dayTemp-mi)/(step*4),120+i*60,115-100*(data.forecasts[i+1].dayTemp-mi)/(step*4));
+                ctx.lineTo(120+i*60,115-100*(data.forecasts[i+1].dayTemp-mi)/(step*4))
+                //else
+                    //ctx.quadraticCurveTo(120+i*60,115-100*(data.forecasts[i].dayTemp-mi)/(step*4),120+i*60,115-100*(data.forecasts[i+1].dayTemp-mi)/(step*4));
                 ctx.stroke();
                 ctx.closePath();
                 ctx.beginPath();
@@ -218,11 +218,11 @@ AMap.plugin('AMap.Weather', function() {
                 ctx.lineWidth=3;
                 ctx.lineJoin="round";
                 ctx.moveTo(60+i*60,115-100*(data.forecasts[i].nightTemp-mi)/(step*4));
-                if(data.forecasts[i+1].nightTemp-data.forecasts[i].nightTemp<=0)
-                    ctx.quadraticCurveTo(60+i*60,115-100*(data.forecasts[i+1].nightTemp-mi)/(step*4),120+i*60,115-100*(data.forecasts[i+1].nightTemp-mi)/(step*4));
-                else
-                    ctx.quadraticCurveTo(120+i*60,115-100*(data.forecasts[i].nightTemp-mi)/(step*4),120+i*60,115-100*(data.forecasts[i+1].nightTemp-mi)/(step*4));
-                //ctx.lineTo(120+i*60,115-100*(data.forecasts[i+1].nightTemp-mi)/(step*4))
+                //if(data.forecasts[i+1].nightTemp-data.forecasts[i].nightTemp<=0)
+                    //ctx.quadraticCurveTo(60+i*60,115-100*(data.forecasts[i+1].nightTemp-mi)/(step*4),120+i*60,115-100*(data.forecasts[i+1].nightTemp-mi)/(step*4));
+                //else
+                    //ctx.quadraticCurveTo(120+i*60,115-100*(data.forecasts[i].nightTemp-mi)/(step*4),120+i*60,115-100*(data.forecasts[i+1].nightTemp-mi)/(step*4));
+                    ctx.lineTo(120+i*60,115-100*(data.forecasts[i+1].nightTemp-mi)/(step*4))
                 ctx.stroke();
                 ctx.closePath();
             }
