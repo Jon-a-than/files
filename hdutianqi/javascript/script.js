@@ -2,13 +2,13 @@ var week=['末日','周一','周二','周三','周四','周五','周六','周日
 var daytmp=[0,0,0,0];
 var nighttmp=[];
 var tmp=0;
-//初始化地图时，若center属性缺省，地图默认定位到用户所在城市的中心
+//初始化地图时，若center属性缺省，地图默认定位到用户所在城市的中心                                   //获取定位
 code = '330100';
 var map = new AMap.Map('map', {
 resizeEnable: true
 });
 code = map.getAdcode();
-//加载天气查询插件
+                                                                                                    //加载天气查询插件
 AMap.plugin('AMap.Weather', function() {
 //创建天气查询实例
 var weather = new AMap.Weather();
@@ -18,7 +18,7 @@ weather.getLive(code, function(err, data) {
         alert('数据获取失败请检查网络');
     document.getElementById('weather').innerHTML=data.weather;
     if(data.weather.slice(-1,2) == '云' || data.weather =='阴'){
-        document.getElementById('weath').src="../picture/多云.png";
+        document.getElementById('weath').src="../picture/多云.png";                               //生活小贴士+实时天气
         document.getElementById('we').innerText="不宜洗车"
     }
     if(data.weather=='晴'){
@@ -88,7 +88,7 @@ function  update(){
 
 
 var asd='asd'
-var flag = 1;                                                             //夜间日间转换
+var flag = 1;                                                                                                 //夜间日间转换
 var t = Date().slice(16,24);
 t = t.slice(0,2);
 if(t < 6 || t > 18){
@@ -148,7 +148,7 @@ document.getElementById('asd').innerHTML=month+Date().slice(16,24);
 
 
 draw();
-function draw(){
+    function draw(){                                                                                //温度折线图框体
     var c=document.getElementById("pic");
     var ctx= c.getContext("2d");
     ctx.lineJoin="round";
@@ -176,7 +176,7 @@ function draw(){
     ctx.closePath();
     temp();
 }
-function  temp(){
+function  temp(){                                                                                           //温度折现
 AMap.plugin('AMap.Weather', function() {
     var weather = new AMap.Weather();
         weather.getForecast(code, function(err, data) {
