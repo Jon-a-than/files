@@ -32,6 +32,14 @@ weather.getLive(code, function(err, data) {
     document.getElementById('temp').innerHTML=data.temperature;
     if(data.temperature>25)
         document.getElementById('yi').innerText="推荐着装:夏装"
+    else if(data.temperature>18)
+        document.getElementById('yi').innerText="推荐着装:春秋过渡装{休闲装,西装,薄毛衣}";
+    else if(data.temperature>11)
+        document.getElementById('yi').innerText="推荐着装:秋冬着装{毛衣,毛套装}";
+    else if(data.temperature>6)
+        document.getElementById('yi').innerText="推荐着装:冬季着装{棉衣,冬大衣}";
+    else
+        document.getElementById('yi').innerText="推荐着装:冬季着装{羽绒服,皮袄}";
     document.getElementById('dir').innerHTML=data.windDirection;
     document.getElementById('power').innerHTML=data.windPower;
     document.getElementById('shidu').innerHTML=data.humidity;
